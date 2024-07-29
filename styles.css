@@ -1,0 +1,23 @@
+h1 {
+  font-family:'Trattatello', fantasy;
+  font-style:normal;
+  font-weight:bold;
+  font-stretch:ultra-expanded;
+  font-size:5.0;
+}
+
+h2 {
+  font-family:'Trattatello', fantasy;
+  font-style:normal;
+  font-weight:bold;
+  font-stretch:ultra-expanded;
+  font-size:4.0;
+}
+
+body {
+  font-family:'Trattatello', fantasy;
+  font-style:normal;
+  font-weight:bold;
+  font-stretch:semi-expanded;
+  font-size:3.0;
+}
