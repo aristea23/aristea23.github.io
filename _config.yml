@@ -40,10 +40,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  -git-bash.exe.lnk
-  -cmd1.lnk
-  -desktop.ini
-  -Command Prompt.lnk
+  - git-bash.exe.lnk
+  - cmd1.lnk
+  - desktop.ini
+  - Command Prompt.lnk
+  - art.html
 
 # Configuration for the Jekyll Feed plugin
 feed:
