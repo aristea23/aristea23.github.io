@@ -1,0 +1,50 @@
+# Site settings
+title: Malladus
+description: emotional narratives and nature scenes
+url: https://aristea23.github.io
+baseurl: "" # Base URL for your site, typically empty for GitHub Pages
+
+# Author
+author:
+  name: Aristea 
+  email: prod.malladus@gmail.com
+
+# Build settings
+markdown: kramdown
+theme: chirpy
+
+# Plugins (GitHub Pages supports a limited set of plugins)
+plugins:
+  - jekyll-feed
+
+# Social settings
+social:
+  instagram: malladus_
+  spotify: malladus
+
+# Navigation menu
+navigation:
+  - title: Home
+    url: /
+  - title: Songs
+    url: /songs/
+  - title: Art
+    url: /art/
+
+# Permalinks (URL structure)
+permalinks:
+  posts: /:year/:month/:day/:title/
+
+# Exclude files or directories from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  -git-bash.exe.lnk
+  -cmd1.lnk
+  -desktop.ini
+  -Command Prompt.lnk
+
+# Configuration for the Jekyll Feed plugin
+feed:
+  path: feed.xml
