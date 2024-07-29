@@ -6,12 +6,12 @@ baseurl: "" # Base URL for your site, typically empty for GitHub Pages
 
 # Author
 author:
-  name: Aristea 
+  name: Aristea
   email: prod.malladus@gmail.com
 
 # Build settings
 markdown: kramdown
-theme: chirpy
+theme: minima
 
 # Plugins (GitHub Pages supports a limited set of plugins)
 plugins:
