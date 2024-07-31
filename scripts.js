@@ -1,4 +1,4 @@
-/***var modal = document.getElementById("modal");
+var modal = document.getElementById("modal");
 
 var modalImg = document.getElementById("modal-image");
 
@@ -26,4 +26,4 @@ window.addEventListener("click", function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-});***/
+});
