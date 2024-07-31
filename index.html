@@ -8,308 +8,221 @@
             max-width: 100%;
             height: auto;
         }
-
         .container {
             width: 80%; /* Adjust the container width as needed */
             margin: 0 auto; /* Center the container */
         }
-
-        .enlarged {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            object-fit: contain;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 999;
-            display: none;
-        }
 </style>
 
-<script>
-    document.getElementById('thumbnail').addEventListener('click', function() {
-      const enlargedImg = document.getElementById('enlarged');
-      enlargedImg.style.display = 'block';
-    });
-
-    document.getElementById('enlarged').addEventListener('click', function() {
-      this.style.display = 'none';
-    });
-</script>
-<body>
-  <div class="image-grid">
-    <div class="image-grid-item">
-      <img src="docs/assets/images/album 2 cover.png" id="thumbnail" alt="no. 2" class="responsive-img">
-      <img src="docs/assets/images/album 2 cover.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/album cover 10.png" id="thumbnail" alt="no. 10" class="responsive-img">
-      <img src="docs/assets/images/album cover 10.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/album cover 12.png" id="thumbnail" alt="no. 12" class="responsive-img">
-      <img src="docs/assets/images/album cover 12.png" id="enlarged" class="enlarged">
-    </div>
-     <div class="image-grid-item">
-      <img src="docs/assets/images/album cover 17d.png" id="thumbnail" alt="no. 17" class="responsive-img">
-      <img src="docs/assets/images/album cover 17d.png" id="enlarged" class="enlarged">
-    </div>
-
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover36.png" id="thumbnail" alt="no. 36" class="responsive-img">
-      <img src="docs/assets/images/albumcover36.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover39.png" id="thumbnail" alt="no. 39" class="responsive-img">
-      <img src="docs/assets/images/albumcover39.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover42.png" id="thumbnail" alt="no. 42" class="responsive-img">
-      <img src="docs/assets/images/albumcover42.png" id="enlarged" class="enlarged">
-    </div>
-     <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover44.png" id="thumbnail" alt="no. 44" class="responsive-img">
-      <img src="docs/assets/images/albumcover44.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover45.png" id="thumbnail" alt="no. 45" class="responsive-img">
-      <img src="docs/assets/images/albumcover45.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover49.png" id="thumbnail" alt="no. 49" class="responsive-img">
-      <img src="docs/assets/images/albumcover49.png" id="enlarged" class="enlarged">
-    </div>
-
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover50.png" id="thumbnail" alt="no. 50" class="responsive-img">
-      <img src="docs/assets/images/albumcover50.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover53.png" id="thumbnail" alt="no. 53" class="responsive-img">
-      <img src="docs/assets/images/albumcover53.png" id="enlarged" class="enlarged">
-    </div>
-     <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover54.png" id="thumbnail" alt="no. 54" class="responsive-img">
-      <img src="docs/assets/images/albumcover54.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover55.png" id="thumbnail" alt="no. 55" class="responsive-img">
-      <img src="docs/assets/images/albumcover55.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover56.png" id="thumbnail" alt="no. 56" class="responsive-img">
-      <img src="docs/assets/images/albumcover56.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover57.png" id="thumbnail" alt="no. 57" class="responsive-img">
-      <img src="docs/assets/images/albumcover57.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover58.png" id="thumbnail" alt="no. 58" class="responsive-img">
-      <img src="docs/assets/images/albumcover58.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover59.png" id="thumbnail" alt="no. 59" class="responsive-img">
-      <img src="docs/assets/images/albumcover59.png" id="enlarged" class="enlarged">
-    </div>
-
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover60.png" id="thumbnail" alt="no. 60" class="responsive-img">
-      <img src="docs/assets/images/albumcover60.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover62.png" id="thumbnail" alt="no. 62" class="responsive-img">
-      <img src="docs/assets/images/albumcover62.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover63.png" id="thumbnail" alt="no. 63" class="responsive-img">
-      <img src="docs/assets/images/albumcover63.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover64.png" id="thumbnail" alt="no. 64" class="responsive-img">
-      <img src="docs/assets/images/albumcover64.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover65.png" id="thumbnail" alt="no. 65" class="responsive-img">
-      <img src="docs/assets/images/albumcover65.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover66.png" id="thumbnail" alt="no. 66" class="responsive-img">
-      <img src="docs/assets/images/albumcover66.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover68.png" id="thumbnail" alt="no. 68" class="responsive-img">
-      <img src="docs/assets/images/albumcover68.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover69.png" id="thumbnail" alt="no. 69" class="responsive-img">
-      <img src="docs/assets/images/albumcover69.png" id="enlarged" class="enlarged">
-    </div>
-
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover70.png" id="thumbnail" alt="no. 70" class="responsive-img">
-      <img src="docs/assets/images/albumcover70.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover71.png" id="thumbnail" alt="no. 71" class="responsive-img">
-      <img src="docs/assets/images/albumcover71.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover72.png" id="thumbnail" alt="no. 72" class="responsive-img">
-      <img src="docs/assets/images/albumcover72.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover74.png" id="thumbnail" alt="no. 74" class="responsive-img">
-      <img src="docs/assets/images/albumcover74.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover75.png" id="thumbnail" alt="no. 75" class="responsive-img">
-      <img src="docs/assets/images/albumcover75.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover76.png" id="thumbnail" alt="no. 76" class="responsive-img">
-      <img src="docs/assets/images/albumcover76.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover77.png" id="thumbnail" alt="no. 77" class="responsive-img">
-      <img src="docs/assets/images/albumcover77.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover78.png" id="thumbnail" alt="no. 78" class="responsive-img">
-      <img src="docs/assets/images/albumcover78.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover79.png" id="thumbnail" alt="no. 79" class="responsive-img">
-      <img src="docs/assets/images/albumcover79.png" id="enlarged" class="enlarged">
-    </div>
-
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover80.png" id="thumbnail" alt="no. 80" class="responsive-img">
-      <img src="docs/assets/images/albumcover80.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover81.png" id="thumbnail" alt="no. 81" class="responsive-img">
-      <img src="docs/assets/images/albumcover81.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover82.png" id="thumbnail" alt="no. 82" class="responsive-img">
-      <img src="docs/assets/images/albumcover82.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover83.png" id="thumbnail" alt="no. 83" class="responsive-img">
-      <img src="docs/assets/images/albumcover83.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover84.png" id="thumbnail" alt="no. 84" class="responsive-img">
-      <img src="docs/assets/images/albumcover84.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover85.png" id="thumbnail" alt="no. 85" class="responsive-img">
-      <img src="docs/assets/images/albumcover85.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover86.png" id="thumbnail" alt="no. 86" class="responsive-img">
-      <img src="docs/assets/images/albumcover86.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover87.png" id="thumbnail" alt="no. 87" class="responsive-img">
-      <img src="docs/assets/images/albumcover87.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover88.png" id="thumbnail" alt="no. 88" class="responsive-img">
-      <img src="docs/assets/images/albumcover88.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover89.png" id="thumbnail" alt="no. 89" class="responsive-img">
-      <img src="docs/assets/images/albumcover89.png" id="enlarged" class="enlarged">
-    </div>
-
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover90.png" id="thumbnail" alt="no. 90" class="responsive-img">
-      <img src="docs/assets/images/albumcover90.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover91.png" id="thumbnail" alt="no. 91" class="responsive-img">
-      <img src="docs/assets/images/albumcover91.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover92.png" id="thumbnail" alt="no. 92" class="responsive-img">
-      <img src="docs/assets/images/albumcover92.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover93.png" id="thumbnail" alt="no. 93" class="responsive-img">
-      <img src="docs/assets/images/albumcover93.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover94.png" id="thumbnail" alt="no. 94" class="responsive-img">
-      <img src="docs/assets/images/albumcover94.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover95.png" id="thumbnail" alt="no. 95" class="responsive-img">
-      <img src="docs/assets/images/albumcover95.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover96.png" id="thumbnail" alt="no. 96" class="responsive-img">
-      <img src="docs/assets/images/albumcover96.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover97.png" id="thumbnail" alt="no. 97" class="responsive-img">
-      <img src="docs/assets/images/albumcover97.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover98.png" id="thumbnail" alt="no. 98" class="responsive-img">
-      <img src="docs/assets/images/albumcover98.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover99.png" id="thumbnail" alt="no. 99" class="responsive-img">
-      <img src="docs/assets/images/albumcover99.png" id="enlarged" class="enlarged">
-    </div>
-
-
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover100.png" id="thumbnail" alt="no. 100" class="responsive-img">
-      <img src="docs/assets/images/albumcover100.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover101.png" id="thumbnail" alt="no. 101" class="responsive-img">
-      <img src="docs/assets/images/albumcover101.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover102.png" id="thumbnail" alt="no. 102" class="responsive-img">
-      <img src="docs/assets/images/albumcover102.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover103.png" id="thumbnail" alt="no. 103" class="responsive-img">
-      <img src="docs/assets/images/albumcover103.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover104.png" id="thumbnail" alt="no. 104" class="responsive-img">
-      <img src="docs/assets/images/albumcover104.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover105.png" id="thumbnail" alt="no. 105" class="responsive-img">
-      <img src="docs/assets/images/albumcover105.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover106.png" id="thumbnail" alt="no. 106" class="responsive-img">
-      <img src="ddocs/assets/images/albumcover106.png" id="enlarged" class="enlarged">
-    </div>
-    <div class="image-grid-item">
-      <img src="docs/assets/images/albumcover107.png" id="thumbnail" alt="no. 107" class="responsive-img">
-      <img src="docs/assets/images/albumcover107.png" id="enlarged" class="enlarged">
-    </div>
-
-
-
+<div class="image-grid">
+  <div class="image-grid-item">
+    <img src="docs/assets/images/album 2 cover.png" alt="no. 2" class="responsive-img">
   </div>
-</body>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/album cover 10.png" alt="no. 10" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/album cover 12.png" alt="no. 12" class="responsive-img">
+  </div>
+   <div class="image-grid-item">
+    <img src="docs/assets/images/album cover 17d.png" alt="no. 17" class="responsive-img">
+  </div>
 
-<!--<div id="modal" class="modal">
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover36.png" alt="no. 36" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover39.png" alt="no. 39" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover42.png" alt="no. 42" class="responsive-img">
+  </div>
+   <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover44.png" alt="no. 44" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover45.png" alt="no. 45" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover49.png" alt="no. 49" class="responsive-img">
+  </div>
+
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover50.png" alt="no. 50" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover53.png" alt="no. 53" class="responsive-img">
+  </div>
+   <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover54.png" alt="no. 54" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover55.png" alt="no. 55" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover56.png" alt="no. 56" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover57.png" alt="no. 57" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover58.png" alt="no. 58" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover59.png" alt="no. 59" class="responsive-img">
+  </div>
+
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover60.png" alt="no. 60" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover62.png" alt="no. 62" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover63.png" alt="no. 63" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover64.png" alt="no. 64" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover65.png" alt="no. 65" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover66.png" alt="no. 66" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover68.png" alt="no. 68" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover69.png" alt="no. 69" class="responsive-img">
+  </div>
+
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover70.png" alt="no. 70" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover71.png" alt="no. 71" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover72.png" alt="no. 72" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover74.png" alt="no. 74" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover75.png" alt="no. 75" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover76.png" alt="no. 76" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover77.png" alt="no. 77" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover78.png" alt="no. 78" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover79.png" alt="no. 79" class="responsive-img">
+  </div>
+
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover80.png" alt="no. 80" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover81.png" alt="no. 81" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover82.png" alt="no. 82" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover83.png" alt="no. 83" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover84.png" alt="no. 84" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover85.png" alt="no. 85" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover86.png" alt="no. 86" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover87.png" alt="no. 87" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover88.png" alt="no. 88" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover89.png" alt="no. 89" class="responsive-img">
+  </div>
+
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover90.png" alt="no. 90" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover91.png" alt="no. 91" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover92.png" alt="no. 92" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover93.png" alt="no. 93" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover94.png" alt="no. 94" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover95.png" alt="no. 95" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover96.png" alt="no. 96" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover97.png" alt="no. 97" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover98.png" alt="no. 98" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover99.png" alt="no. 99" class="responsive-img">
+  </div>
+
+
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover100.png" alt="no. 100" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover101.png" alt="no. 101" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover102.png" alt="no. 102" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover103.png" alt="no. 103" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover104.png" alt="no. 104" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover105.png" alt="no. 105" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover106.png" alt="no. 106" class="responsive-img">
+  </div>
+  <div class="image-grid-item">
+    <img src="docs/assets/images/albumcover107.png" alt="no. 107" class="responsive-img">
+  </div>
+
+
+
+
+</div>
+
+<div id="modal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modal-image">
         <div id="caption"></div>
 </div>
 <script src="scripts.js"></script>
--->
+
 </html>
