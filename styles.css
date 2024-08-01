@@ -1,52 +1,52 @@
 h1 {
-  font-family:'Trattatello', fantasy;
-  font-style:normal;
-  font-weight:bold;
-  font-stretch:ultra-expanded;
-  font-size:5.0;
+    font-family:'Trattatello', fantasy;
+    font-style:normal;
+    font-weight:bold;
+    font-stretch:ultra-expanded;
+    font-size:5.0;
 }
 
 h2 {
-  font-family:'Trattatello', fantasy;
-  font-style:normal;
-  font-weight:bold;
-  font-stretch:ultra-expanded;
-  font-size:4.0;
+    font-family:'Trattatello', fantasy;
+    font-style:normal;
+    font-weight:bold;
+    font-stretch:ultra-expanded;
+    font-size:4.0;
 }
 
 body {
-  font-family:'Trattatello', fantasy;
-  font-style:normal;
-  font-weight:bold;
-  font-stretch:semi-expanded;
-  font-size:3.0;
-  padding-bottom: 500px;
+    font-family:'Trattatello', fantasy;
+    font-style:normal;
+    font-weight:bold;
+    font-stretch:semi-expanded;
+    font-size:3.0;
+    padding-bottom: 500px;
 }
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-  padding: 10px;
-  margin-bottom: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 1000px;
 }
 
 .image-grid-item {
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
 
 .image-grid-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
 }
 
 .image-grid-item img:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 body {
     font-family: Arial, sans-serif;
@@ -105,6 +105,7 @@ body {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .audio-item {
