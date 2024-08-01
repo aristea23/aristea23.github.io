@@ -4,7 +4,7 @@ var modalImg = document.getElementById("modal-image");
 
 var captionText = document.getElementById("caption");
 
-var images = document.querySelectorAll(".image-grid-item");
+var images = document.querySelectorAll("responsive-img");
 
 images.forEach(function(image) {
     image.addEventListener("click", function() {
