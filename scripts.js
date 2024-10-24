@@ -1,29 +1,18 @@
-var modal = document.getElementById("modal");
+document.addEventListener('DOMContentLoaded', function () {
+    const img = document.getElementById("myImage");
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("img01");
+    const span = document.getElementsByClassName("close")[0];
 
-var modalImg = document.getElementById("modal-image");
-
-var captionText = document.getElementById("caption");
-
-var images = document.querySelectorAll(".image-grid-item");
-
-images.forEach(function(image) {
-    image.addEventListener("click", function() {
+    img.onclick = function() {
         modal.style.display = "block";
         modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    });
-});
+    }
 
-
-var closeBtn = document.querySelector(".close");
-
-
-closeBtn.addEventListener("click", function() {
-    modal.style.display = "none";
-});
-
-window.addEventListener("click", function(event) {
-    if (event.target == modal) {
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    modal.onclick = function() {
         modal.style.display = "none";
     }
 });
