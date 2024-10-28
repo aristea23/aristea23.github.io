@@ -16,3 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.style.display = "none";
     }
 });
+
+function toggleAudioIndex() {
+    currentAudioIndex = (currentAudioIndex === 0) ? 1 : 0; // Toggle between 0 and 1
+    stopAllAudios(); // Stop any currently playing audio
+    audioElements[currentAudioIndex].play(); // Play the new audio
+}

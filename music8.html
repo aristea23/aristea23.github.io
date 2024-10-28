@@ -135,8 +135,29 @@
     soliluquoy,
     i would have waited for you,
 -->
+<script>
+let currentAudioIndex = 0;
+const audioElements = document.querySelectorAll('#audio-grid-item');
+
+
+function stopAllAudios() {
+    audioElements.forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0; // Reset to start
+    });
+}
+
+function playNextAudio() {
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+        audioElements[currentAudioIndex].play();
+        audioElements[currentAudioIndex].onended = playNextAudio; // Set the next song
+    }
+}
+</script>
 
     <main>
+      <button onclick="toggleAudioIndex()">Autoplay toggle</button>
       <div class="audio-grid">
           <div class="audio-item">
               <h2>when we knew each other</h2>
